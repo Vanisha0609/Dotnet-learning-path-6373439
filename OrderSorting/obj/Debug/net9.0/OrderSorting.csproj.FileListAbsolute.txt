@@ -1,0 +1,14 @@
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\bin\Debug\net9.0\OrderSorting.exe
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\bin\Debug\net9.0\OrderSorting.deps.json
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\bin\Debug\net9.0\OrderSorting.runtimeconfig.json
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\bin\Debug\net9.0\OrderSorting.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\bin\Debug\net9.0\OrderSorting.pdb
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.AssemblyInfoInputs.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.AssemblyInfo.cs
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.csproj.CoreCompileInputs.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\refint\OrderSorting.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.pdb
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\OrderSorting.genruntimeconfig.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\OrderSorting\obj\Debug\net9.0\ref\OrderSorting.dll

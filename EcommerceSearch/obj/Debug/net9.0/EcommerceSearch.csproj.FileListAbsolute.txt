@@ -1,0 +1,14 @@
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\bin\Debug\net9.0\EcommerceSearch.exe
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\bin\Debug\net9.0\EcommerceSearch.deps.json
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\bin\Debug\net9.0\EcommerceSearch.runtimeconfig.json
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\bin\Debug\net9.0\EcommerceSearch.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\bin\Debug\net9.0\EcommerceSearch.pdb
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.AssemblyInfoInputs.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.AssemblyInfo.cs
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.csproj.CoreCompileInputs.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\refint\EcommerceSearch.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.pdb
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\EcommerceSearch.genruntimeconfig.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\EcommerceSearch\obj\Debug\net9.0\ref\EcommerceSearch.dll

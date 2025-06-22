@@ -1,0 +1,14 @@
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\bin\Debug\net9.0\Forecasting.exe
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\bin\Debug\net9.0\Forecasting.deps.json
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\bin\Debug\net9.0\Forecasting.runtimeconfig.json
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\bin\Debug\net9.0\Forecasting.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\bin\Debug\net9.0\Forecasting.pdb
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.AssemblyInfoInputs.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.AssemblyInfo.cs
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.csproj.CoreCompileInputs.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\refint\Forecasting.dll
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.pdb
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\Forecasting.genruntimeconfig.cache
+C:\Users\Sivakumar\Desktop\week1-Dotnet\Forecasting\obj\Debug\net9.0\ref\Forecasting.dll
