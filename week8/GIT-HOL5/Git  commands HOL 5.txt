@@ -1,0 +1,81 @@
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bash
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git add bash
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git commit -m "Add bash file/folder"
+[main 85472c6] Add bash file/folder
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bash
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git fetch origin
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git pull origin main
+From https://gitlab.com/vanisha06091/GitDemo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git branch -a
+  GitWork
+* main
+  remotes/origin/GitNewBranch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git branch -r
+  origin/GitNewBranch
+  origin/HEAD -> origin/main
+  origin/main
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git pull origin main
+From https://gitlab.com/vanisha06091/GitDemo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://gitlab.com/vanisha06091/GitDemo.git
+   3430a99..85472c6  main -> main
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git log origin/main --oneline
+85472c6 (HEAD -> main, origin/main, origin/HEAD) Add bash file/folder
+3430a99 Merge gitwork into main and resolve conflict
+eff1bf0 Add hello.xml in master branch
+f8315bc (GitWork) Add and update hello.xml in GitWork branch
+4b42e6c Merge branch 'GitNewBranch' into 'main'
+3162340 (origin/GitNewBranch) Add branchfile.txt in GitNewBranch
+4b4bd54 Add .gitignore to ignore log files and log folder
+f149c7e Initial commit
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$

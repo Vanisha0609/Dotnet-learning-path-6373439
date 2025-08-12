@@ -1,0 +1,141 @@
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bash
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git checkout -b GitWork
+Switched to a new branch 'GitWork'
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitWork)
+$ echo "<note><body>Hello from GitWork branch</body></note>" >hello.xml
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitWork)
+$ git add hello.xml
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitWork)
+$ echo "<note><body>Updated content in GitWork</body></note>" > hello.xml
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitWork)
+$ git status
+On branch GitWork
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bash
+
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitWork)
+$ git commit -am "Add and update hello.xml in GitWork branch"
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+[GitWork f8315bc] Add and update hello.xml in GitWork branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.xml
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitWork)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ echo "<note><body>Hello from Master branch</body></note>" > hello.xml
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git add hello.xml
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git commit -m "Add hello.xml in master branch"
+[main eff1bf0] Add hello.xml in master branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.xml
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git log --oneline --graph --decorate --all
+* eff1bf0 (HEAD -> main) Add hello.xml in master branch
+| * f8315bc (GitWork) Add and update hello.xml in GitWork branch
+|/
+*   4b42e6c (origin/main) Merge branch 'GitNewBranch' into 'main'
+|\
+| * 3162340 (origin/GitNewBranch) Add branchfile.txt in GitNewBranch
+|/
+* 4b4bd54 Add .gitignore to ignore log files and log folder
+* f149c7e Initial commit
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git diff main GitWork
+diff --git a/hello.xml b/hello.xml
+index 465950c..76a0083 100644
+--- a/hello.xml
++++ b/hello.xml
+@@ -1 +1 @@
+-<note><body>Hello from Master branch</body></note>
++<note><body>Updated content in GitWork</body></note>
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git merge GitWork
+Auto-merging hello.xml
+CONFLICT (add/add): Merge conflict in hello.xml
+Automatic merge failed; fix conflicts and then commit the result.
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main|MERGING)
+$ git add hello.xml
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main|MERGING)
+$ git commit -m "Merge gitwork into main and resolve conflict"
+[main 3430a99] Merge gitwork into main and resolve conflict
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bash
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git push origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 943 bytes | 943.00 KiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://gitlab.com/vanisha06091/GitDemo.git
+   4b42e6c..3430a99  main -> main
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git commit -m "Merge gitwork into main and resolve conflict"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bash
+
+nothing added to commit but untracked files present (use "git add" to track)
+

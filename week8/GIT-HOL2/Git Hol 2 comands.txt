@@ -1,0 +1,37 @@
+ons/week 8/GIT HOLI/G1tDemo (master)
+$ notepad "C:/Users/KIIT/Desktop/Learning program solutions/Learning-program-so utions/week 8/GIT HOL1/GitDemo/.gitignore"
+KIIT@PG-2229209 MINGW64 ~/Desktop/Learning program solutions/Learning-program-s
+lutions/week 8/GIT HOL1/GitDemo (master)
+$"/c/Program Files/Notepad++/notepad++.exe" "C:/Users/KIIT/Desktop/Learning pr
+gram solutions/Learning-program-solutions/week 8/GIT HOL1/GitDemo/.gitignore"
+KIIT@PG-2229209 MINGW64 ~/Desktop/Learning program solutions/Learning-program-s
+lutions/week 8/GIT HOL1/GitDemo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed) (use "git restore <file>..." to discard changes in working directory)
+modified: .gitignore
+no changes added to commit (use "git add" and/or "git commit -a")
+KIIT@PG-2229209 MINGW64 ~/Desktop/Learning program solutions/Learning-program-s lutions/week 8/GIT HOL1/GitDemo (master)
+$AC
+KIIT@PG-2229209 MINGW64 ~/Desktop/Learning program solutions/Learning-program-s lutions/week 8/GIT HOL1/GitDemo (master)
+$ git add .gitignore
+git commit -m "Update .gitignore to ignore log files and log folder"
+git push origin master
+[master 0201020] Update .gitignore to ignore.log files and log folder
+1 file changed, 7 insertions (+)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://gitlab.com/aksha4144533/git-demo.git
+aba0fc9..0201020 master -> master
+KIIT@PG-2229209 MINGW64 ~/Desktop/Learning program solutions/Learning-program-s
+
+KIIT@PG-2229209 MINGW64 -/Desktop/Learning program solutions/Learning-program-solutions/week 8/GIT HOL1/GitDemo (master)
+$ git diff --cached
+KIIT@PG-2229209 MINGW64 -/Desktop/Learning program solutions/Learning-program-solutions/week 8/GIT HOL1/GitDemo (master)
+$

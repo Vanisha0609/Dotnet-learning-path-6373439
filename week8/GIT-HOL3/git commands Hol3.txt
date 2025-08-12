@@ -1,0 +1,65 @@
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git checkout -b GitNewBranch
+Switched to a new branch 'GitNewBranch'
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitNewBranch)
+$ git branch
+* GitNewBranch
+  main
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitNewBranch)
+$ echo "This file is for GitNewBranch" > branchfile.txt
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitNewBranch)
+$ git add branchfile.txt
+warning: in the working copy of 'branchfile.txt', LF will be replaced by CRLF the next time Git touches it
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitNewBranch)
+$ git commit -m "Add branchfile.txt in GitNewBranch"
+[GitNewBranch 3162340] Add branchfile.txt in GitNewBranch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branchfile.txt
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitNewBranch)
+$ git push origin GitNewBranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for GitNewBranch, visit:
+remote:   https://gitlab.com/vanisha06091/GitDemo/-/merge_requests/new?merge_request%5Bsource_branch%5D=GitNewBranch
+remote:
+To https://gitlab.com/vanisha06091/GitDemo.git
+ * [new branch]      GitNewBranch -> GitNewBranch
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (GitNewBranch)
+$ git log --oneline --graph --decorate
+* 3162340 (HEAD -> GitNewBranch, origin/GitNewBranch) Add branchfile.txt in GitNewBranch
+* 4b4bd54 (origin/main, main) Add .gitignore to ignore log files and log folder
+* f149c7e Initial commit
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 259 bytes | 12.00 KiB/s, done.
+From https://gitlab.com/vanisha06091/GitDemo
+ * branch            main       -> FETCH_HEAD
+   4b4bd54..4b42e6c  main       -> origin/main
+Updating 4b4bd54..4b42e6c
+Fast-forward
+ branchfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branchfile.txt
+
+SEC@DESKTOP-M4AT5QO MINGW64 ~/Desktop/week8/GIT-HOL1/GitDemo (main)
+$ git branch -d GitNewBranch
+Deleted branch GitNewBranch (was 3162340).
